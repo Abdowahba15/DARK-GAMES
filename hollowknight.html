@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hollow Knight</title>
+
+<style>
+/* نفس الستايل الاحترافي */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{
+background:linear-gradient(135deg,#000,#111,#222,#fff);
+background-size:400% 400%;
+animation:bgMove 15s infinite alternate;
+color:white;
+}
+@keyframes bgMove{
+0%{background-position:0% 50%}
+100%{background-position:100% 50%}
+}
+.container{max-width:1000px;margin:auto;padding:40px 20px;}
+.back{color:white;text-decoration:none;display:inline-block;margin-bottom:20px;transition:0.3s;}
+.back:hover{color:#ccc;transform:translateX(-5px);}
+.banner{width:100%;border-radius:20px;margin-bottom:30px;box-shadow:0 20px 40px rgba(0,0,0,0.6);}
+.glass{background:rgba(255,255,255,0.05);backdrop-filter:blur(15px);padding:25px;border-radius:20px;}
+.download-btn{display:inline-block;margin-top:20px;padding:12px 25px;border-radius:30px;background:white;color:black;text-decoration:none;font-weight:bold;transition:0.3s;}
+.download-btn:hover{background:#ccc;box-shadow:0 0 20px white;}
+textarea{width:100%;padding:15px;border:none;border-radius:15px;margin-bottom:10px;}
+.post-btn{padding:10px 20px;border:none;border-radius:20px;cursor:pointer;background:white;transition:0.3s;}
+.post-btn:hover{background:#ccc;}
+.comment{background:rgba(255,255,255,0.08);padding:15px;border-radius:15px;margin-top:10px;animation:fadeIn 0.5s ease;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+button,
+button:focus,
+button:active,
+a,
+a:focus,
+a:active {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<a href="index.html" class="back">⬅ Back</a>
+
+<img class="banner" src="https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg">
+
+<div class="glass">
+<h1>Hollow Knight</h1>
+<p>A challenging 2D action-adventure game set in a vast ruined kingdom.</p>
+<a href="https://store.steampowered.com/app/367520/Hollow_Knight/" target="_blank" class="download-btn">Download</a>
+</div>
+
+<h2 style="margin-top:40px;">Comments</h2>
+<textarea id="commentInput" placeholder="Write your opinion..."></textarea>
+<button class="post-btn" onclick="addComment()">Post</button>
+<div id="comments"></div>
+
+</div>
+
+<script>
+const gameKey="comments_hollow";
+const commentsDiv=document.getElementById("comments");
+function loadComments(){
+let comments=JSON.parse(localStorage.getItem(gameKey))||[];
+commentsDiv.innerHTML="";
+comments.forEach(c=>{commentsDiv.innerHTML+=`<div class="comment">${c}</div>`;});
+}
+function addComment(){
+let input=document.getElementById("commentInput");
+if(input.value.trim()==="
+</script>
+</body>
+</html>
