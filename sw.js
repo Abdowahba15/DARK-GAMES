@@ -3,9 +3,17 @@ const CACHE_NAME = "game-site-cache-v1";
 const urlsToCache = [
   "/",
   "/index.html",
-  "/style.css",
-  "/script.js",
-  "/images/logo.png"   // أضف كل الصور المهمة هنا
+  "/main.css",
+  "/main.js",
+  "/gameprofile.js",
+  "/gameprofile.css",
+  "/hollowknight.html",
+  "/hollowknightsilksong.html",
+  "/eldenring.html",
+  "/images/eldenring.jpg",
+  "/images/hollowknight.jpg",
+  "/images/silksong.jpg"
+  // أضف كل الصور المهمة هنا
 ];
 
 // تثبيت Service Worker وتخزين الملفات
