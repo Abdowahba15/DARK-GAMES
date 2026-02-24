@@ -63,3 +63,18 @@ a:active {
   color: #ff0000;
   transform: scale(1.2);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+html {
+  scroll-behavior: smooth;
+}
