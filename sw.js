@@ -10,10 +10,10 @@ const urlsToCache = [
   "hollowknightsilksong.html",
   "eldenring.html",
   "deadcells.html",
-  "images/eldenring.jpg",
-  "images/hollowknight.jpg",
-  "images/silksong.jpg",
-  "images/deadcells.jpg"
+  "eldenring.jpg",
+  "hollowknight.jpg",
+  "silksong.jpg",
+  "deadcells.jpg"
   // أضف كل الصور المهمة هنا
 ];
 
