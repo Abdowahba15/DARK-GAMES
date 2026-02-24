@@ -1,18 +1,17 @@
 const CACHE_NAME = "game-site-cache-v1";
 
 const urlsToCache = [
-  "/",
-  "/index.html",
-  "/main.css",
-  "/main.js",
-  "/gameprofile.js",
-  "/gameprofile.css",
-  "/hollowknight.html",
-  "/hollowknightsilksong.html",
-  "/eldenring.html",
-  "/eldenring.jpg",
-  "/hollowknight.jpg",
-  "/silksong.jpg"
+  "index.html",
+  "main.css",
+  "main.js",
+  "gameprofile.js",
+  "gameprofile.css",
+  "hollowknight.html",
+  "hollowknightsilksong.html",
+  "eldenring.html",
+  "eldenring.jpg",
+  "hollowknight.jpg",
+  "silksong.jpg"
   // أضف كل الصور المهمة هنا
 ];
 
