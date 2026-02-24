@@ -117,3 +117,15 @@ html, body {
 body {
   overscroll-behavior: none; /* يمنع التمرير الإفتراضي الذي يظهر الأبيض */
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
