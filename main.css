@@ -129,6 +129,3 @@ body {
 * {
   -webkit-overflow-scrolling: touch;
 }
-html {
-  scroll-behavior: smooth;
-}
